@@ -1,0 +1,20 @@
+.contactHeader {
+    margin: 35px;
+    padding: 5px;
+    font-size: 26px;
+}
+
+.contactDiv {
+    padding: 15px;
+    width: 30%;
+    color: #fff;
+    background-color: #000;
+    margin-left: 1%;
+    border-radius: 5px;
+}
+
+.contactBody {
+    margin-left: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
