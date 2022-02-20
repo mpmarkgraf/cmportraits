@@ -24,18 +24,6 @@ const Carousel = ({ slides }) => {
 
   return (
     <section className={carouselStyles.slider}>
-      <img
-        src={leftArrow}
-        alt="left arrow"
-        className={carouselStyles.leftArrow}
-        onClick={prevSlide}
-      />
-      <img
-        src={rightArrow}
-        alt="right arrow"
-        className={carouselStyles.rightArrow}
-        onClick={nextSlide}
-      />
       {CarouselData.map((slide, index) => {
         return (
           <div
@@ -56,6 +44,8 @@ const Carousel = ({ slides }) => {
           </div>
         );
       })}
+      <div className={carouselStyles.leftArrow} onClick={prevSlide}>&#10094;</div>
+      <div className={carouselStyles.rightArrow} onClick={nextSlide}>&#10095;</div>
     </section>
   );
 };
